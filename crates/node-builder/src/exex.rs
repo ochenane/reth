@@ -38,6 +38,8 @@ use reth_primitives::Head;
 use reth_tasks::TaskExecutor;
 use std::future::Future;
 
+// todo(onbjerg): Move this to `reth-exex` when we can move `FullNodeTypes` to `reth-node-api`
+// currently not possible because of issues between node-api and
 /// Captures the context that an ExEx has access to.
 #[derive(Clone, Debug)]
 pub struct ExExContext<Node: FullNodeTypes> {

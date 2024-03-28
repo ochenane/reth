@@ -6281,6 +6281,7 @@ dependencies = [
  "reth-primitives",
  "reth-provider",
  "tokio",
+ "tokio-stream",
  "tokio-util",
 ]
 
