@@ -10,6 +10,7 @@ members = [
     "crates/ethereum-forks/",
     "crates/etl/",
     "crates/evm/",
+    "crates/exex/",
     "crates/interfaces/",
     "crates/metrics/",
     "crates/metrics/metrics-derive/",
@@ -250,8 +251,13 @@ reth-trie = { path = "crates/trie" }
 reth-trie-parallel = { path = "crates/trie-parallel" }
 
 # revm
-revm = { version = "8.0.0", features = ["std", "secp256k1"], default-features = false }
-revm-primitives = { version = "3.1.0", features = ["std"], default-features = false }
+revm = { version = "8.0.0", features = [
+    "std",
+    "secp256k1",
+], default-features = false }
+revm-primitives = { version = "3.1.0", features = [
+    "std",
+], default-features = false }
 revm-inspectors = { git = "https://github.com/paradigmxyz/evm-inspectors", rev = "0ef5814" }
 
 # eth
@@ -330,11 +336,10 @@ jsonrpsee = "0.20"
 jsonrpsee-core = "0.20"
 jsonrpsee-types = "0.20"
 
-# crypto
 secp256k1 = { version = "0.27.0", default-features = false, features = [
     "global-context",
     "recovery",
-] }
+] } # crypto
 enr = { version = "=0.10.0", default-features = false, features = ["k256"] }
 
 # for eip-4844
