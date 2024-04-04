@@ -2237,7 +2237,7 @@ dependencies = [
 [[package]]
 name = "discv5"
 version = "0.4.1"
-source = "git+https://github.com/sigp/discv5#6707bcf3da350ff273208bb38dc29acc4cc4850c"
+source = "git+https://github.com/sigp/discv5?rev=6707bcf3da350ff273208bb38dc29acc4cc4850c#6707bcf3da350ff273208bb38dc29acc4cc4850c"
 dependencies = [
  "aes 0.7.5",
  "aes-gcm",
@@ -2431,7 +2431,7 @@ checksum = "c34f04666d835ff5d62e058c3995147c06f42fe86ff053337632bca83e42702d"
 [[package]]
 name = "enr"
 version = "0.11.0"
-source = "git+https://github.com/danipopes/enr?branch=advance-decode-buffer#e48bff60e7f751ed842b992e79e2a37cb9e04ea7"
+source = "git+https://github.com/mattsse/enr?branch=matt/decode-rlp-header-on-build#135e0a105b98bd162a89787929bbe28425386469"
 dependencies = [
  "alloy-rlp",
  "base64 0.21.7",
